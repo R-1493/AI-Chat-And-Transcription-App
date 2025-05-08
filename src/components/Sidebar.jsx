@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import { useLocation, Link } from "react-router-dom";
 import { RiChat3Line } from "react-icons/ri";
 import { TiMicrophoneOutline } from "react-icons/ti";
-import { FiSettings, FiSidebar } from "react-icons/fi";
+import { FiSettings, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import AnimationData from "../assets/Animation.json";
 import Lottie from "react-lottie";
-
+import { FiSidebar } from "react-icons/fi";
+import { useLocation, Link } from "react-router-dom";
 const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const location = useLocation(); // ✅ ضروري
+  const location = useLocation();
 
   const toggleSidebar = () => setIsCollapsed((prev) => !prev);
 
@@ -20,7 +20,6 @@ const Sidebar = () => {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-
   const getDescription = () => {
     switch (location.pathname) {
       case "/chat":
@@ -48,7 +47,7 @@ const Sidebar = () => {
 
   return (
     <aside
-      className={`flex flex-col ${
+      className={`flex flex-col  md:w-20${
         isCollapsed ? "w-20" : "w-64"
       } h-auto max-h-screen px-2 py-8 overflow-y-auto bg-secondaryLightBg border-r transition-all duration-300 dark:bg-secondaryDarkBg`}
     >
@@ -58,7 +57,7 @@ const Sidebar = () => {
       >
         <FiSidebar size={24} />
       </button>
-      <div className="flex flex-col justify-between">
+      <div className="flex flex-col justify-between  ">
         <nav className="flex-1 space-y-2">
           <Link
             className={`flex ${
