@@ -5,7 +5,7 @@ import AnimationData from "../assets/Animation.json";
 import Animation2 from "../assets/Animation-2.json";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-
+import { useRef } from "react";
 const Introduction = () => {
   const lottieRef = useRef(null);
   const navigate = useNavigate();
