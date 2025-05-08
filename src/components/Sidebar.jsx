@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { RiChat3Line } from "react-icons/ri";
 import { TiMicrophoneOutline } from "react-icons/ti";
-import { FiSettings, FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { FiSettings } from "react-icons/fi";
 import AnimationData from "../assets/Animation - 1746543453302.json";
 import Lottie from "react-lottie";
 import { FiSidebar } from "react-icons/fi";
