@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import Lottie from "react-lottie";
-import Animation2 from "../assets/Animation -2.json";
+import Animation2 from "../assets/Animation-2.json";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import GoogleIcon from "../assets/GoogleIcon.jsx";

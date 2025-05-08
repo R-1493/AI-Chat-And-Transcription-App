@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import Lottie from "react-lottie";
 import { gsap } from "gsap";
-import AnimationData from "../assets/Animation - 1746543453302.json";
-import Animation2 from "../assets/Animation -2.json";
+import AnimationData from "../assets/Animation.json";
+import Animation2 from "../assets/Animation-2.json";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
