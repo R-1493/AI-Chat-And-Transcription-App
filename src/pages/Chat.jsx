@@ -5,6 +5,7 @@ import Lottie from "react-lottie";
 import { FiUser, FiMic, FiMicOff } from "react-icons/fi";
 import { useRef } from "react";
 import gsap from "gsap";
+import { Link } from "react-router-dom";
 
 const Chat = () => {
   const currentUser = { photoURL: null };
@@ -101,9 +102,9 @@ const Chat = () => {
     return (
       <div className="p-4 text-center text-red-500">
         No API key found. Please go to the{" "}
-        <a href="/setting" className="underline text-blue-500">
+        <Link to="/setting" className="underline text-blue-500">
           Settings
-        </a>{" "}
+        </Link>{" "}
         page and enter your OpenAI key.
       </div>
     );
@@ -237,7 +238,7 @@ const Chat = () => {
       </ul>
 
       <div className="fixed bottom-4 w-full max-w-3xl  sm:min-w-fit px-4">
-        <div className="flex gap-2">
+        <div className="flex gap-2 justify-start items-star">
           <input
             value={input}
             onChange={(e) => setInput(e.target.value)}
